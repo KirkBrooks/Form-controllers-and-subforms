@@ -1,0 +1,25 @@
+{
+  "parent":{
+    "subformName":"",
+    "width": 0,
+    "height": 0
+  },
+  "title":{
+    "text":"New form",
+    "font":"",
+    "size":20,
+    "color":"",
+    "pad-left": 0
+  },
+  "rect": {
+    "color":"",
+    "vis":1,
+    "pad-left":0,
+    "pad-top":0,
+    "pad-right":0,
+    "pad-bottom":0,
+    "resize":1
+  },
+  "buttons":[],
+  "pictures": []
+}

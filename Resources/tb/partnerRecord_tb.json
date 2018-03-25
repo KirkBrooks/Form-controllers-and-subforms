@@ -1,0 +1,35 @@
+{
+  "parent":{
+    "subformName":"",
+    "width": 0,
+    "height": 0
+  },
+  "title":{
+    "text":"Partner Details",
+    "font":"",
+    "size":14,
+    "color":"white",
+    "pad-left": 20
+  },
+  "rect": {
+    "color":"#fec44f",
+    "vis":1,
+    "pad-left":0,
+    "pad-top":0,
+    "pad-right":0,
+    "pad-bottom":0,
+    "resize":1
+  },
+  "nav":{
+    "size":15,
+    "pad-right":50,
+    "pad-top":5,
+    "type":"curSel",
+    "table":1,
+    "array":"",
+    "field":0,
+    "set":""
+  },
+  "buttons":[],
+  "pictures": []
+}

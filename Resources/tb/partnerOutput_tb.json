@@ -1,0 +1,60 @@
+{
+  "parent":{
+    "subformName":"",
+    "width": 0,
+    "height": 0
+  },
+  "title":{
+    "text":"New Partner",
+    "font":"",
+    "size":20,
+    "color":"white",
+    "pad-left": 73
+  },
+  "rect": {
+    "color":"#d95f0e",
+    "vis":1,
+    "pad-left":0,
+    "pad-top":0,
+    "pad-right":0,
+    "pad-bottom":0,
+    "resize":1
+  },
+  "buttons":[
+    {
+      "title":"OK",
+      "name":"btn_ok",
+      "callback":"",
+      "formEvent":"-100",
+      "stdAction":"",
+      "width": 40,
+      "height": 40,
+      "pad":5,
+      "style":0,
+      "picture":"#icons/40x40_blue/checkmark.png",
+      "titlePos":4,
+      "titleVis":0,
+      "iconVis":1,
+      "popup":0,
+      "nStates":0,
+      "iconOffset":2,
+      "hMargin":2,
+      "vMargin":2,
+      "resize":2
+    }
+  ],
+  "pictures": [
+    {
+      "path":"resources/images/customers.png",
+      "name":"logo",
+      "width":50,
+      "height":30,
+      "pad-left":20,
+      "pad-top": 10,
+      "format":6,
+      "callback":"",
+      "formEvent":"-199",
+      "transparent":1
+    }
+  ]
+}

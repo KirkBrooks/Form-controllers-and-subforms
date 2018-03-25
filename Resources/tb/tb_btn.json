@@ -1,0 +1,22 @@
+{
+  "index":0,
+  "title":"",
+  "name":"",
+  "callback":"",
+  "formEvent":"",
+  "stdAction":0,
+  "width": 40,
+  "height": 20,
+  "pad":5,
+  "style":0,
+  "picture":"",
+  "titlePos":4,
+  "titleVis":0,
+  "iconVis":1,
+  "popup":0,
+  "nStates":0,
+  "iconOffset":2,
+  "hMargin":2,
+  "vMargin":2,
+  "resize":2
+}

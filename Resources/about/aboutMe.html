@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+ <html lang="en">
+  <head>
+       <meta charset="UTF-8">
+       <title>About this demo</title>
+       <meta name="description" content="DESCRIPTION">
+      <link rel="stylesheet" href="PATH">
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+
+   <body>
+    <div class="container">
+      
+      <img src="4d.png">
+      <div class="page-header">
+        <h1>About this demo</h1>
+      </div>
+
+      <h3>Overview</h3>
+      <p>
+        This demo illustrates use of Subforms and Form Controllers. 
+      </p><p>
+        This web area is a a short intro to get you going right away. Be sure to read the accopmanying tech note too.
+      </p>
+      <hr>
+      <h3>How do I make it work?</h3>
+      <p>
+        The database is a simple one of 'Partners'. It's a more specific approach to a Contacts database that supports identifying the legal entity of a Partner, name options, and more. <br/>
+        It's prepopulated with records from <a href="https://www.fakenamegenerator.com/">Fakename Generator</a>.
+     </p>
+     <img src="structure.png" width="400px"/>
+      <h3>Enter records</h3>
+      <p>
+        Start by selecting <a href="/newPartner">Enter New Partner</a> from the File menu.</p>
+        <img src="new.png" width="400px">
+        <p>
+        This input form is made up of 5 subforms. One, the email input, is very simple while the name and address inputs are quite involved. To see how it works start with the <a href="/Partner_new_record">Partner_new_record</a> method. Notice you can set various options for how the new partner record is created. You can require an email, phone and or address for example, and the colored rectangle appears around that field.
+      </p><p>
+          I have it set to require an email so the red border will appear until it's filled in at which point the border turns green.
+      </p>
+      <h3>View Records</h3>
+      <p>
+        Choose <a href="/show">Show Records</a> from the File menu. This form is a different take on the traditional output form. Type into the search widget to generate a list of some partners.
+      </p>
+      <img src="output.png" width="400px">
+      <p>
+       The display area is made up of four subforms. First is a header toolbar for the entire form located on page 0. On page 1 there is another instance of the toolbar above the details area. Note the nav buttons in the toolbar - give them a try. <br/><br/>
+       There is the 4D search widget.<br/><br/>
+       Finally the display area is an extremely simple subform to illustrate how valuable they can be without any programming - there are no events and methods involved in that subform. 
+       <br/><br/>
+       Check out the form controller, <a href="/partnerOutput">Partner_outputForm_controller.</a>
+      </p>
+      <h3>Toolbars</h3>
+      <p>
+      The toolbar submenus can be configured via <a href="/tbDocs">json documents</a> in the resources folder. If you look at the methods that set up these forms you'll see you have the option to load blank templates and configure them in code or do all the setup in the JSON. Or both. It's quite flexible. 
+       <br/>
+      Buttons, pictures, nav buttons, setting the color of the background rectangle, and the title can all be controlled with the JSON.
+      </p>
+      <h3>Form Controllers</h3>
+      <p>
+        Form controllers are simply project methods I route all the object scripts and the form method to. There are a number of advantages to this approach and they are used throughout this demo. Some are <a href="/subformCtrlr">fairly simple</a> as well as <a href="/complexCtrlr">very complex</a> ones. I think complex forms become much easier to degug when all the code it in one place. Managing dynamic variables is also quite a bit easier.
+      </p>
+        <!-- ========================================== -->
+        <h3>Enjoy</h3>
+        <p>
+          Thanks for taking the time to play with this. Please let me know what you think and any issues you come accoss. Feel free to use anything you like.
+        </p><p>
+          For example, the Toolbar module can be copied directly to your projects. The web area module that manages this window is easily added as well.
+        </p>
+        <h4>Shameless self promotional plug</h4>
+        <p>
+          I enjoy doing this sort of work with 4D and am available and happy to discuss working with you on your projects. If you like what you see but don't have the time or interest to manage it yourself let's talk. 
+        </p>
+        <h2>Kirk Brooks</h2>
+        <p>kirk.brooks@gmail.com</p>
+      </div> <!-- the panel groups-->
+
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   </body>
+
+ </html>

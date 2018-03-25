@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<!-- -->
+
+<macros>
+	<macro name="demo_formCtrlr" in_menu="false" version="2"  type_ahead="true">
+		<text>
+			C_TEXT($1;$2;$action;$errMsg)
+			C_LONGINT($0;$form_return)
+			C_POINTER($ptrCurrent;$ptrObj)
+
+			$ptrCurrent:=OBJECT Get pointer(Object current)
+			If (Count parameters=0)
+			$action:=OBJECT Get name(Object current)
+			Else 
+			$action:=$1
+			End if 
+			  // ------------------------------------------
+
+
+			  // ------------------------------------------
+			Case of 
+			: (False)  ///// buttons /////
+			: ($action="")
+			: ($action="")
+			: (False)  ///// fields /////
+			: ($action="")
+			: ($action="")
+			: (False)  ///// form objects /////
+			: ($action="")
+			: ($action="")
+			: (False)  ///// form actions /////
+			: ($action="")
+			: ($action="")
+			: ($action="formEvents")
+				Case of 
+				: (Form event=On Load)
+
+				: (Form event=On Outside Call)
+				CANCEL
+				End case 
+			Else 
+			$errMsg:="Unknown action or object: "+$action
+			End case 
+
+			// ------------------------------------------
+			// $0:=$form_return
+			4D_ALERT ($errMsg;Current method name)
+		</text>
+	</macro>
+	
+</macros>
