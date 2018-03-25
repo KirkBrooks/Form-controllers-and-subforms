@@ -1,7 +1,7 @@
 # Form-controllers-and-subforms
 A 4D database demonstrating the use of form controllers and subforms.
 
-You must have [4th Dimension](https://www.4d.com) v15 or greater installed to run it. 
+You must have [4th Dimension](http://www.4d.com) v15 or greater installed to run it. 
 * * *
 
 ### How do I make it work?
